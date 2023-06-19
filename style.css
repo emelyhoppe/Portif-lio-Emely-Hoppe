@@ -4,25 +4,34 @@ body{
 }
 
 .caixaprincipal{
+    display: flex;
     position: relative;
-    width: 940px;
-    margin: 0 auto;
+    justify-content: center;
+    gap: 25px;
 }
+
+.dados {
+    flex-direction: column;
+    margin-top: 35px;
+}
+
+.botao {
+    margin-top: 20%;
+    margin-left: 18%;
+}
+
 .profilepic{
     width: 280px;
+    height: 280px;
     margin-left: 30px;
 }
 h1{
-    position: absolute;
-    top: 60px;
-    right: 190px;
     color: white;
     font-family: 'Playfair', serif;
 }
 .p1{
-    position: absolute;
-    top: 100px;
-    left: 335px;
+
+    text-align: left;
 }
 p{
     color: white;
@@ -34,15 +43,10 @@ header{
     padding: 20px 0;
 }
 .caixa{
-    position: relative;
-    width: 940px;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
 }
-nav{
-    position: absolute;
-    top: 50%;
-    right: 0;
-}
+
 nav li{
     display: inline;
     margin: 0 0 0 15px;
@@ -56,9 +60,6 @@ nav a{
     font-family: 'Playfair', serif;
 }
 .button {
-    position: absolute;
-    top: 280px;
-    right: 390px;
     border-radius: 0.2rem;
     background-color:white;
     padding: 1rem 2rem;
@@ -69,7 +70,7 @@ nav a{
 }
 #about{
     color: white;
-    margin-left: 450px ;
+    text-align: center;
     font-family: 'Playfair', serif;
 }
 .about{
@@ -111,32 +112,33 @@ nav a{
     font-family: 'Playfair', serif;
     text-align: start;
 }
-.project-image2{
+
+.project-image2 {
+    margin-top: 42px;
     width: 200px;
-    position: relative;
-    top: 20px;
-    left: 30px;
+    height: 200px;
 }
+
 .projec-title2 {
-    position: absolute;
-    top: 1350px;
-    margin-left: 250px;
     color: white;
     font-size: 35px;
     font-family: 'Playfair', serif;
 }
-.project2{
-    color: white;
-    position: absolute;
-    top: 1450px;
-    margin-left: 250px;
-    font-family: 'Playfair', serif;
-    text-align: start;
+
+.project2 {
+    text-align: left;
 }
+
+.mario {
+    display: flex;
+    margin-top: 100px;
+    margin-left: 30px;
+}
+
 .footer{
     position: relative;
     top: 200px;
-    margin-left: 575px;
+    margin-left: 47%;
     
 }
 .finalfooter{
@@ -144,3 +146,21 @@ nav a{
     top: 200px;
 }
 
+@media (max-width: 768px) {
+
+    .project-image2 {
+        height: 180px;
+        margin-top: 75px;
+    }
+
+    .caixaprincipal {
+        margin: 0;
+    }
+    
+}
+@media screen and (max-width: 480px) {
+    .caixaprincipal {
+        margin: 0;
+        flex-direction: column;
+    }
+}
