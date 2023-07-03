@@ -165,3 +165,8 @@ nav a{
         flex-direction: column;
     }
 }
+
+.finalfooter a{
+    text-decoration: none;
+    color: white;
+}
